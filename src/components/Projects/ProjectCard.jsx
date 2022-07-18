@@ -8,12 +8,14 @@ const ProjectCard = ({ project }) => {
 		<div data-category={project.category} className={styles.Project_Card}>
 			<Link to={'/projects/' + project.id}>{/* <a></a> */}</Link>
 			<div className={styles.Project_Image}>
-				<img
-					alt={project.title}
-					src={project.thumbnail_image}
-					// width="800"
-					// height="800"
-				/>
+				<span>
+					<img
+						alt={project.title}
+						src={project.thumbnail_image}
+						width="100%"
+						height="100%"
+					/>
+				</span>
 			</div>
 			<div className={styles.Project_Content}>
 				<h4 className={'heading text-animation ' + styles.ta}>

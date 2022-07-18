@@ -36,10 +36,10 @@ import { useParams } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 
 const ProjectDetail = () => {
-	const { slug } = useParams();
+	const currentSlug = useParams();
 	const [isMobile, setIsMobile] = useState(false);
 	const [bannerImg, setBannerImg] = useState(khansortium_banner);
-	console.log('slug', slug);
+	console.log(currentSlug);
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -109,7 +109,7 @@ const ProjectDetail = () => {
 
 	// const router = useRouter();
 	// let currentSlug = router.query;
-	let currentSlug = {};
+
 	// console.log("current",currentSlug);
 
 	const [allProjects, set_allProjects] = useState([

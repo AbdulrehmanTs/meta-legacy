@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../../components/Projects/styles.module.css';
 import barringtonBanner from '../../assets/imgs/projects/barrington/banner.jpg';
 import khansortiumBanner from '../../assets/imgs/projects/khansortium/banner.jpg';
+import { Link } from 'react-router-dom';
 
 const ProjectDetailsPage = ({ data }) => {
 	console.log('data ', data);
@@ -69,7 +70,7 @@ const ProjectDetailsPage = ({ data }) => {
 							</svg>
 						</span>
 					</a>
-					<a href="">
+					<Link to="#s">
 						<span
 							className={
 								styles.visit_site_btn
@@ -77,7 +78,7 @@ const ProjectDetailsPage = ({ data }) => {
 						>
 							Visit Site
 						</span>
-					</a>
+					</Link>
 					<div className="cover-img-div">
 						{data.banner ? (
 							<img

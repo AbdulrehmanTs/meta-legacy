@@ -25,6 +25,7 @@
   width: 48%;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 .Project_Card a {
   position: absolute;
@@ -41,8 +42,9 @@
   /* transform-origin: 0 bottom; */
   transition: 1s;
   transform: scale(1.6);
+  width: 100%;
 }
-.Project_Image > span::before {
+.Project_Image>span::before {
   content: "";
   position: absolute;
   top: 0;

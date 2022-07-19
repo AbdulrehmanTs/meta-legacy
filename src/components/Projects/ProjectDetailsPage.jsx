@@ -70,7 +70,7 @@ const ProjectDetailsPage = ({ data }) => {
 							</svg>
 						</span>
 					</a>
-					<a to="#s">
+					<Link to="#s">
 						<span
 							className={
 								styles.visit_site_btn
@@ -78,7 +78,7 @@ const ProjectDetailsPage = ({ data }) => {
 						>
 							Visit Site
 						</span>
-					</a>
+					</Link>
 					<div className="cover-img-div">
 						{data.banner ? (
 							<img

@@ -36,6 +36,7 @@
 
 .Project_Image {
   /* background-color: #222; */
+  overflow: hidden;
 }
 .Project_Image img {
   /* transform: scaleY(0); */

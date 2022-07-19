@@ -70,7 +70,7 @@ const ProjectDetailsPage = ({ data }) => {
 							</svg>
 						</span>
 					</a>
-					<Link to="#s">
+					<a to="#s">
 						<span
 							className={
 								styles.visit_site_btn
@@ -78,14 +78,13 @@ const ProjectDetailsPage = ({ data }) => {
 						>
 							Visit Site
 						</span>
-					</Link>
+					</a>
 					<div className="cover-img-div">
 						{data.banner ? (
 							<img
-								src={data.banner.src}
-								width={data.banner.width}
-								height={data.banner.height}
+								src={data.banner}
 								alt="baad me"
+								style={{ height: '100%', width: '100%' }}
 							/>
 						) : (
 							''
@@ -104,7 +103,7 @@ const ProjectDetailsPage = ({ data }) => {
 									>
 										<img
 											key={data.images + 1}
-											src={img.src}
+											src={img}
 											width={img.width}
 											height={img.height}
 											alt="baad me"
@@ -113,7 +112,7 @@ const ProjectDetailsPage = ({ data }) => {
 								) : (
 									<img
 										key={data.images + 1}
-										src={img.src}
+										src={img}
 										width={img.width}
 										height={img.height}
 										alt="baad me"

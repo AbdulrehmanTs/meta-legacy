@@ -1,10 +1,8 @@
 import gsap from 'gsap';
 import { useEffect, useState } from 'react';
 import Layout from '../components/layout/Layout';
-// import Image from 'next/image';
 import khansortium_banner from '../assets/imgs/portfolios/khansortium/khansortium_banner.jpg';
 import styles from '../components/Projects/styles.module.css';
-// import { useRouter } from "next/router";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 import barringtonBanner from '../assets/imgs/projects/barrington/banner.jpg';
